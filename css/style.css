@@ -30,7 +30,7 @@ body {
   font-size: 120px;
   position: absolute;
   z-index: 2;
-  top: 40%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -178,8 +178,8 @@ body {
 #section_01 .montain {
   position: absolute;
   bottom: -100px;
-  -webkit-transform: translateX(-50%) scale(1.5);
-          transform: translateX(-50%) scale(1.5);
+  -webkit-transform: translateX(-50%) scale(2.3);
+          transform: translateX(-50%) scale(2.3);
   -webkit-animation: montain-move 2.5s forwards;
           animation: montain-move 2.5s forwards;
   pointer-events: none;
@@ -191,6 +191,8 @@ body {
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   z-index: 4;
+  -webkit-transform: translateX(-50%) translateY(20%) scale(2.3);
+          transform: translateX(-50%) translateY(20%) scale(2.3);
 }
 
 #section_01 .montain_02 {
@@ -202,7 +204,7 @@ body {
     bottom: -100px;
   }
   100% {
-    bottom: 100px;
+    bottom: 250px;
   }
 }
 
@@ -211,7 +213,34 @@ body {
     bottom: -100px;
   }
   100% {
-    bottom: 100px;
+    bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #section_01 .montain {
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5);
+  }
+  #section_01 .montain_01 {
+    -webkit-transform: translateX(-50%) translateY(20%) scale(1.5);
+            transform: translateX(-50%) translateY(20%) scale(1.5);
+  }
+  @-webkit-keyframes montain-move {
+    0% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: 100px;
+    }
+  }
+  @keyframes montain-move {
+    0% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: 100px;
+    }
   }
 }
 
@@ -227,6 +256,12 @@ body {
   -webkit-box-shadow: 0 0 100px #f7c224, inset 0 0 50px #f7c224;
           box-shadow: 0 0 100px #f7c224, inset 0 0 50px #f7c224;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #section_01 .sun {
+    left: 30px;
+  }
 }
 
 #section_01 .bird {
@@ -320,6 +355,14 @@ body {
 
 #section_01 .three-card-02 {
   left: 20%;
+  bottom: -60px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#section_01 .three-card-03 {
+  left: 52.5%;
+  z-index: 2;
   bottom: -60px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);

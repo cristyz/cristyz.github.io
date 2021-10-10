@@ -1,7 +1,7 @@
 .montain {
   position: absolute;
   bottom: -100px;
-  transform: translateX(-50%) scale(1.5);
+  transform: translateX(-50%) scale(2.3);
   animation: montain-move 2.5s forwards;
   pointer-events: none;
 }
@@ -10,6 +10,7 @@
   z-index: 1;
   animation-duration: 5s;
   z-index: 4;
+  transform: translateX(-50%) translateY(20%) scale(2.3);
 }
 .montain_02 {
   left: 75%;
@@ -20,6 +21,23 @@
     bottom: -100px;
   }
   100% {
-    bottom: 100px;
+    bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .montain {
+    transform: translateX(-50%) scale(1.5);
+  }
+  .montain_01 {
+    transform: translateX(-50%) translateY(20%) scale(1.5);
+  }
+  @keyframes montain-move {
+    0% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: 100px;
+    }
   }
 }
