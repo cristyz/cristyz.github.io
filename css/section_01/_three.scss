@@ -1,0 +1,55 @@
+.three-card {
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+  height: 366px;
+  z-index: 10;
+  pointer-events: none;
+
+  &__header {
+    position: absolute;
+    clip-path: circle(0px at 50% 100%);
+    animation: three-header-animeted 1s ease-in-out 0.5s forwards;
+  }
+
+  &__body {
+    position: absolute;
+    clip-path: inset(100% 0px 0px 0px);
+    animation: three-body-animeted 1s ease-in-out forwards;
+  }
+}
+
+.three-card-02 {
+  left: 20%;
+  bottom: -60px;
+  transform: scale(0.8);
+}
+
+@keyframes three-header-animeted {
+  0% {
+    clip-path: circle(0px at 50% 100%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 100%);
+  }
+}
+@keyframes three-body-animeted {
+  0% {
+    clip-path: inset(100% 0px 0px 0px);
+  }
+  100% {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .three-card-02{
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .three-card-02{
+    left: 0%;
+  }
+}

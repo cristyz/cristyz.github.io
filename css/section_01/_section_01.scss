@@ -1,0 +1,79 @@
+#section_01 {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  user-select: none;
+
+  position: relative;
+
+  h1 {
+    color: #fff;
+    font-size: 120px;
+    position: absolute;
+    z-index: 2;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    white-space: nowrap;
+
+    span {
+      margin: 0 -10px;
+      position: relative;
+      top: -400px;
+    }
+
+    &:hover ~ .mouse {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 10;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: opacity-animation 0.5s ease-in-out forwards 5s;
+    cursor: pointer;
+
+    @keyframes opacity-animation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  @import "clouds";
+  @import "montains";
+  @import "sun";
+  @import "birds";
+  @import "three";
+}
+
+@media screen and (max-width: 768px) {
+  #section_01 {
+    h1 {
+      font-size: 80px;
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  #section_01 {
+    h1 {
+      font-size: 40px;
+      span {
+        margin: 0 -4px;
+      }
+    }
+  }
+}

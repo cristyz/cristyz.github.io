@@ -1,0 +1,12 @@
+.sun {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  z-index: 2;
+  transform: translateX(-50%);
+  animation: sun-animate 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+
+  box-shadow: 0 0 100px #f7c224, inset 0 0 50px #f7c224;
+
+  border-radius: 50%;
+}

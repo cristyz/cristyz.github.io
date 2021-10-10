@@ -1,0 +1,49 @@
+.bird {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  transition: opacity 0.8s;
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.bird-01 {
+  left: 10%;
+  top: 35%;
+  z-index: 999;
+  animation-duration: 5s;
+}
+.bird-02 {
+  left: 12%;
+  top: 50%;
+  animation-duration: 8s;
+}
+.bird-03 {
+  left: 70%;
+  top: 30%;
+  animation-duration: 12s;
+}
+.bird-04 {
+  left: 90%;
+  top: 35%;
+  z-index: 1;
+  animation-duration: 7s;
+}
+.bird-05 {
+  left: 60%;
+  top: 70%;
+  animation-duration: 9s;
+}
+.bird-06 {
+  left: 20%;
+  top: 30%;
+  z-index: 1;
+  animation-duration: 8s;
+}
+.bird-07 {
+  left: 40%;
+  top: 40%;
+  z-index: 999;
+  animation-duration: 6s;
+}

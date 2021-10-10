@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#90dffe), to(#38a3d1));
+  background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
+  cursor: none;
+}
+
+#section_01 {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+#section_01 h1 {
+  color: #fff;
+  font-size: 120px;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#section_01 h1 span {
+  margin: 0 -10px;
+  position: relative;
+  top: -400px;
+}
+
+#section_01 h1:hover ~ .mouse {
+  width: 40px;
+  height: 40px;
+}
+
+#section_01 h2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 10;
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: opacity-animation 0.5s ease-in-out forwards 5s;
+          animation: opacity-animation 0.5s ease-in-out forwards 5s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#section_01 .cloud {
+  position: absolute;
+  -webkit-animation: cloud_move 1s linear infinite;
+          animation: cloud_move 1s linear infinite;
+  pointer-events: none;
+}
+
+#section_01 .cloud_01 {
+  top: 50px;
+  left: 50px;
+  -webkit-animation: cloud_move_01 70s infinite;
+          animation: cloud_move_01 70s infinite;
+}
+
+#section_01 .cloud_02 {
+  top: 80px;
+  right: 50px;
+  z-index: 3;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-animation: cloud_move_02 70s infinite;
+          animation: cloud_move_02 70s infinite;
+}
+
+#section_01 .cloud_03 {
+  top: 180px;
+  right: 550px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation: cloud_move_03 60s infinite;
+          animation: cloud_move_03 60s infinite;
+  z-index: 3;
+}
+
+@-webkit-keyframes cloud_move_01 {
+  0%,
+  100% {
+    left: -40px;
+  }
+  50% {
+    left: 130%;
+  }
+}
+
+@keyframes cloud_move_01 {
+  0%,
+  100% {
+    left: -40px;
+  }
+  50% {
+    left: 130%;
+  }
+}
+
+@-webkit-keyframes cloud_move_02 {
+  0%,
+  100% {
+    right: -40px;
+  }
+  50% {
+    right: 90%;
+  }
+}
+
+@keyframes cloud_move_02 {
+  0%,
+  100% {
+    right: -40px;
+  }
+  50% {
+    right: 90%;
+  }
+}
+
+@-webkit-keyframes cloud_move_03 {
+  0%,
+  100% {
+    right: -300px;
+  }
+  50% {
+    right: 140%;
+  }
+}
+
+@keyframes cloud_move_03 {
+  0%,
+  100% {
+    right: -300px;
+  }
+  50% {
+    right: 140%;
+  }
+}
+
+#section_01 .montain {
+  position: absolute;
+  bottom: -100px;
+  -webkit-transform: translateX(-50%) scale(1.5);
+          transform: translateX(-50%) scale(1.5);
+  -webkit-animation: montain-move 2.5s forwards;
+          animation: montain-move 2.5s forwards;
+  pointer-events: none;
+}
+
+#section_01 .montain_01 {
+  left: 25%;
+  z-index: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  z-index: 4;
+}
+
+#section_01 .montain_02 {
+  left: 75%;
+}
+
+@-webkit-keyframes montain-move {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+
+@keyframes montain-move {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+
+#section_01 .sun {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: sun-animate 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+          animation: sun-animate 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  -webkit-box-shadow: 0 0 100px #f7c224, inset 0 0 50px #f7c224;
+          box-shadow: 0 0 100px #f7c224, inset 0 0 50px #f7c224;
+  border-radius: 50%;
+}
+
+#section_01 .bird {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#section_01 .bird-01 {
+  left: 10%;
+  top: 35%;
+  z-index: 999;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#section_01 .bird-02 {
+  left: 12%;
+  top: 50%;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+#section_01 .bird-03 {
+  left: 70%;
+  top: 30%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+#section_01 .bird-04 {
+  left: 90%;
+  top: 35%;
+  z-index: 1;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+#section_01 .bird-05 {
+  left: 60%;
+  top: 70%;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+
+#section_01 .bird-06 {
+  left: 20%;
+  top: 30%;
+  z-index: 1;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+#section_01 .bird-07 {
+  left: 40%;
+  top: 40%;
+  z-index: 999;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+#section_01 .three-card {
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+  height: 366px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#section_01 .three-card__header {
+  position: absolute;
+  -webkit-clip-path: circle(0px at 50% 100%);
+          clip-path: circle(0px at 50% 100%);
+  -webkit-animation: three-header-animeted 1s ease-in-out 0.5s forwards;
+          animation: three-header-animeted 1s ease-in-out 0.5s forwards;
+}
+
+#section_01 .three-card__body {
+  position: absolute;
+  -webkit-clip-path: inset(100% 0px 0px 0px);
+          clip-path: inset(100% 0px 0px 0px);
+  -webkit-animation: three-body-animeted 1s ease-in-out forwards;
+          animation: three-body-animeted 1s ease-in-out forwards;
+}
+
+#section_01 .three-card-02 {
+  left: 20%;
+  bottom: -60px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@-webkit-keyframes three-header-animeted {
+  0% {
+    -webkit-clip-path: circle(0px at 50% 100%);
+            clip-path: circle(0px at 50% 100%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 100%);
+            clip-path: circle(100% at 50% 100%);
+  }
+}
+
+@keyframes three-header-animeted {
+  0% {
+    -webkit-clip-path: circle(0px at 50% 100%);
+            clip-path: circle(0px at 50% 100%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 100%);
+            clip-path: circle(100% at 50% 100%);
+  }
+}
+
+@-webkit-keyframes three-body-animeted {
+  0% {
+    -webkit-clip-path: inset(100% 0px 0px 0px);
+            clip-path: inset(100% 0px 0px 0px);
+  }
+  100% {
+    -webkit-clip-path: inset(0px 0px 0px 0px);
+            clip-path: inset(0px 0px 0px 0px);
+  }
+}
+
+@keyframes three-body-animeted {
+  0% {
+    -webkit-clip-path: inset(100% 0px 0px 0px);
+            clip-path: inset(100% 0px 0px 0px);
+  }
+  100% {
+    -webkit-clip-path: inset(0px 0px 0px 0px);
+            clip-path: inset(0px 0px 0px 0px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #section_01 .three-card-02 {
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #section_01 .three-card-02 {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section_01 h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #section_01 h1 {
+    font-size: 40px;
+  }
+  #section_01 h1 span {
+    margin: 0 -4px;
+  }
+}
+
+.mouse {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+  -webkit-transition: width 0.9s, height 0.9s;
+  transition: width 0.9s, height 0.9s;
+}
+/*# sourceMappingURL=style.css.map */
