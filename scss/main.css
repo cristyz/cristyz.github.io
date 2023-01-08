@@ -370,6 +370,11 @@ aside .github_color {
   color: #004a99;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 768px) {
+  #about_me .about_me__content {
+    padding: 1rem;
+  }
+}
 #about_me .waves {
   -o-object-fit: cover;
      object-fit: cover;
