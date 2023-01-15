@@ -427,9 +427,6 @@ aside .github_color {
   background-color: #fff;
   min-height: 100vh;
   background-color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .base-section .content {
   max-width: 1200px;
@@ -440,11 +437,4 @@ aside .github_color {
   font-weight: 600;
   color: #0062cc;
   margin-bottom: 1rem;
-}
-@media (max-width: 768px) {
-  .base-section {
-    padding: 1rem;
-    position: relative;
-    top: unset;
-  }
 }/*# sourceMappingURL=main.css.map */
