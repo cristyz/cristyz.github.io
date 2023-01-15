@@ -420,6 +420,34 @@ aside .github_color {
   color: #fff;
 }
 
+#projects a {
+  background-color: #fff;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #007bff;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+#projects a h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#projects a p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 1rem 1rem 1rem;
+}
+#projects a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .base-section {
   min-height: 100vh;
   border-top: 3px solid #007bff;
