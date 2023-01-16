@@ -420,32 +420,51 @@ aside .github_color {
   color: #fff;
 }
 
-#projects a {
+#projects .project_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  display: grid;
+  grid-template-areas: "qr_code_project room_project room_project" "qr_code_project . .";
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#projects .project_content .qr_code_project {
+  grid-area: qr_code_project;
+}
+#projects .project_content .room_project {
+  grid-area: room_project;
+}
+#projects .project_content a {
   background-color: #fff;
-  width: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
   color: #007bff;
   text-decoration: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 9px 9px 18px #c7c7c7, -9px -9px 18px #f9f9f9;
   border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
   gap: 1rem;
 }
-#projects a h4 {
+#projects .project_content a h4 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
-#projects a p {
+#projects .project_content a p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 1rem 1rem 1rem;
 }
-#projects a img {
+#projects .project_content a img {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+#projects .project_content a:hover {
+  box-shadow: 21px 21px 42px #bcbcbc, -21px -21px 42px #ffffff;
 }
 
 .base-section {
