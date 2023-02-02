@@ -425,8 +425,8 @@ aside .github_color {
   flex-wrap: wrap;
   gap: 3rem;
   display: grid;
-  grid-template-areas: "qr_code_project room_project room_project" "qr_code_project . .";
-  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas: "qr_code_project room_project room_project" "qr_code_project kanban_project kanban_project" ". . .";
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 #projects .project_content .qr_code_project {
@@ -434,6 +434,9 @@ aside .github_color {
 }
 #projects .project_content .room_project {
   grid-area: room_project;
+}
+#projects .project_content .kanban_project {
+  grid-area: kanban_project;
 }
 #projects .project_content a {
   background-color: #fff;
